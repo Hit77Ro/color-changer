@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 400px;
+  margin: 100px auto;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 20px;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+li {
+  opacity: 0.5;
+  height: 50px;width: 50px;
+  cursor: pointer;
+  background-color: var(--clr);
+  border-radius: 50%;
+}
+li.active {
+  opacity: 1;
+  border: 2px solid white;
+}
+.bg {
+  transition: 0.4s linear;
+  height: 200px;
+  background-color: red;
+}
